@@ -1,0 +1,36 @@
+{
+  "name": "@slumber/cli",
+  "version": "0.0.0",
+  "author": "idris-maps",
+  "license": "GPL-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "slumber": "dist/index.js"
+  },
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --external:pg-native --outfile=dist/index.js",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/uuid": "^8.3.0",
+    "esbuild": "^0.8.36"
+  },
+  "dependencies": {
+    "@slumber/db": "^0.0.0",
+    "ajv": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "minimist": "^1.2.5",
+    "uuid": "^8.3.2"
+  }
+}
