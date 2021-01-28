@@ -1,0 +1,42 @@
+{
+  "name": "@slumber/handlers",
+  "version": "0.0.0",
+  "author": "idris-maps",
+  "license": "GPL-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "dist": "dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "ava",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@slumber/db": "^0.0.0",
+    "ajv": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "ramda": "^0.27.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@slumber/cli": "^0.0.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/ramda": "^0.27.36",
+    "@types/uuid": "^8.3.0"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "files": [
+      "test/*.spec.ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}

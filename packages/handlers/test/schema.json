@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {
+    "test_string": { "type": "string" },
+    "test_number": { "type": "number" }
+  },
+  "required": ["test_string", "test_number"]
+}
