@@ -1,17 +1,15 @@
 {
   "name": "@slumber/db",
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "Anders <idris.maps@gmx.ch>",
-  "homepage": "",
+  "author": "idris-maps",
   "license": "GPL-2.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "dist": "dist"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"

@@ -1,11 +1,17 @@
 # `@slumber/db`
 
-> TODO: description
+The postgres connector for `slumber`.
 
 ## Usage
 
-```
-const db = require('@slumber/db');
+```ts
+import Db from '@slumber/db'
 
-// TODO: DEMONSTRATE API
+const db = Db(process.env.DATABASE_URL)
 ```
+
+## Methods
+
+* `open: () => void`
+* `close: () => void`
+* `run: <T>(queryString: string, values?: any[]) => Promise<T[]>`
