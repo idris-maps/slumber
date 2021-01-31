@@ -1,6 +1,6 @@
 {
   "name": "@slumber/handlers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "idris-maps",
   "license": "GPL-2.0",
   "main": "dist/index.js",
@@ -16,14 +16,14 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@slumber/db": "^0.0.1",
+    "@slumber/db": "^0.0.2",
     "ajv": "^7.0.3",
     "dotenv": "^8.2.0",
     "ramda": "^0.27.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@slumber/cli": "^0.0.1",
+    "@slumber/cli": "^0.0.2",
     "@types/dotenv": "^8.2.0",
     "@types/ramda": "^0.27.36",
     "@types/uuid": "^8.3.0",
