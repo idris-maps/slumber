@@ -1,5 +1,9 @@
 const noOp = `
   Unknown operation
+
+  List all operations:
+
+  slumber help
 `
 const missingVar = (d: string) => `
   The environment variable ${d} is not defined

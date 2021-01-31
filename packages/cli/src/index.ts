@@ -10,6 +10,7 @@ import listKeys from './listKeys'
 import deleteCollection from './deleteCollection'
 import deleteKey from './deleteKey'
 import setAccess from './setAccess'
+import help from './help'
 import {
   getArg,
   getCollectionName,
@@ -108,6 +109,10 @@ const run = async () => {
       getEnvVar('DATABASE_SCHEMA'),
       getArg('key'),
     )
+  }
+
+  if (operation === 'help') {
+    return help(getOptionalArg('op'))
   }
 
   console.log(msg.noOp)
