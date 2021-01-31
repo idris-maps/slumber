@@ -50,13 +50,13 @@ const run = async (
     : undefined
   
   const data = wantsData || (!wantsAccess && !wantsSchema)
-    ? await db.run(getData(schema), [col.id])
+    ? await db.run<{__id: string, data: any}>(getData(schema), [col.id])
     : undefined
   
   const res = {
     collection,
     access,
-    data,
+    data: data ? data.map(({ __id, data }) => ({ ...data, __id })) : undefined,
     schema: wantsSchema ? col.schema : undefined,
   }
 
